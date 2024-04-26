@@ -12,7 +12,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Cardo", sans-serif;
 }
@@ -60,9 +62,8 @@ h6 {
 /*--------------------------------------------------------------
 # Dark Theme
 --------------------------------------------------------------*/
-.dark-theme{
-  
-  #hero{
+.dark-theme {
+  #hero {
     background: #000000;
   }
   .hero h2 {
@@ -80,7 +81,7 @@ h6 {
   .header .logo h1 {
     color: #ffffff;
   }
-  
+
   .navbar a,
   .navbar a:focus {
     color: #9a9c9e;
@@ -88,27 +89,28 @@ h6 {
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar li:hover > a {
     color: #ffffff;
-  }color: #ffffff;
+  }
+  color: #ffffff;
   .navbar .dropdown ul {
     background-color: var(--color-secondary);
   }
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
-  .navbar .dropdown ul li:hover>a {
+  .navbar .dropdown ul li:hover > a {
     color: #ffffff;
   }
   .header .header-social-links a {
     color: var(--color-default);
   }
   .header .header-social-links i {
-  color: var(--color-default);
+    color: var(--color-default);
   }
-  #main{
+  #main {
     background: #000000;
   }
-  .page-header  h2{
+  .page-header h2 {
     color: #ffffff;
   }
   .page-header p {
@@ -127,17 +129,22 @@ h6 {
     color: #ffffff;
   }
   .contact .php-email-form input,
-.contact .php-email-form textarea {
-  
-  background-color: var(--color-secondary);
-  border: 1px solid #2e3133;
-  color: #ffffff;
-}
+  .contact .php-email-form textarea {
+    background-color: var(--color-secondary);
+    color: #ffffff;
+  }
+  .gallery .gallery-item h6 {
+    color: #ffffff;
+  }
+
+  .gallery .gallery-item p {
+    color: #555454;
+  }
+  .gallery .gallery-item p:hover {
+    color: #ffffff;
+  }
 }
 .theme-toggle {
-  /* position: fixed;
-  top: 20px;
-  right: 20px; */
   padding-left: 30px;
   cursor: pointer;
   color: #ffffff;
@@ -204,7 +211,7 @@ h6 {
 }
 
 .page-header p {
-  color: #000000 ;
+  color: #000000;
 }
 
 .page-header .cta-btn {
@@ -424,7 +431,7 @@ h6 {
   font-size: 16px;
 }
 .header .header-social-links i {
-color: var(--color-primary);
+  color: var(--color-primary);
 }
 .header .header-social-links a:hover {
   color: #000000;
@@ -482,7 +489,7 @@ color: var(--color-primary);
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar li:hover > a {
     color: #000000;
     font-weight: 800;
   }
@@ -519,11 +526,11 @@ color: var(--color-primary);
 
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
-  .navbar .dropdown ul li:hover>a {
+  .navbar .dropdown ul li:hover > a {
     color: #000000;
   }
 
-  .navbar .dropdown:hover>ul {
+  .navbar .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -535,7 +542,7 @@ color: var(--color-primary);
     visibility: hidden;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: 100%;
@@ -548,13 +555,12 @@ color: var(--color-primary);
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
 
 @media (min-width: 1280px) {
-
   .mobile-nav-show,
   .mobile-nav-hide {
     display: none;
@@ -613,7 +619,7 @@ color: var(--color-primary);
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar li:hover > a {
     color: #ffffff;
   }
 
@@ -627,8 +633,8 @@ color: var(--color-primary);
     border: 1px solid black;
   }
 
-  .navbar .dropdown>.dropdown-active,
-  .navbar .dropdown .dropdown>.dropdown-active {
+  .navbar .dropdown > .dropdown-active,
+  .navbar .dropdown .dropdown > .dropdown-active {
     display: block;
   }
 
@@ -680,7 +686,7 @@ color: var(--color-primary);
   color: var(--color-primary);
 }
 
-.about .content p{
+.about .content p {
   color: #000000;
 }
 
@@ -817,6 +823,17 @@ color: var(--color-primary);
 .gallery .gallery-item img {
   transition: 0.3s;
 }
+.gallery .gallery-item h6 {
+  color: #000000;
+}
+
+.gallery .gallery-item p {
+  color: #4c4b4b;
+  font-weight: 700;
+}
+.gallery .gallery-item p:hover {
+  color: #000000;
+}
 
 .gallery .gallery-links {
   position: absolute;
@@ -875,14 +892,20 @@ color: var(--color-primary);
   width: 100%;
 }
 
-.gallery-single .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.gallery-single
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.7);
   opacity: 1;
 }
 
-.gallery-single .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.gallery-single
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: var(--color-primary);
 }
 
@@ -912,7 +935,6 @@ color: var(--color-primary);
 }
 
 @media (max-width: 575px) {
-
   .gallery-single .swiper-button-prev,
   .gallery-single .swiper-button-next {
     display: none;
@@ -1137,7 +1159,7 @@ color: var(--color-primary);
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item+.info-item {
+.contact .info-item + .info-item {
   margin-top: 40px;
 }
 
@@ -1193,7 +1215,7 @@ color: var(--color-primary);
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1244,7 +1266,7 @@ color: var(--color-primary);
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: var(--color-primary);
   border: 0;
   padding: 10px 35px;
@@ -1253,7 +1275,7 @@ color: var(--color-primary);
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: rgba(39, 167, 118, 0.8);
 }
 
